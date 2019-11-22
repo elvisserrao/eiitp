@@ -1,28 +1,27 @@
 # Projects
 
 ## Github
-REPOSITORY_GH=~/Repositories/github.com
+REPOSITORY_GH=~/repo/github.com
 alias cd_gh="cd ${REPOSITORY_GH}"
 
-## Mauricio Vieira
-### https://github.com/mauriciovieira/
-REPOSITORY_GH_MV=${REPOSITORY_GH}/mauriciovieira/
-alias cd_gh_mv="cd ${REPOSITORY_GH_MV}"
+## Elvis Serrão
+### https://github.com/elvisserrao/
+REPOSITORY_GH_ES=${REPOSITORY_GH}/elvisserrao/
+alias cd_gh_es="cd ${REPOSITORY_GH_ES}"
 
-REPOSITORY_GH_MV_EIITP="${REPOSITORY_GH_MV}/eiitp"
-alias cd_eiitp="cd ${REPOSITORY_GH_MV_EIITP}"
-alias run_eiitp='cd_eiitp && make go'
+REPOSITORY_GH_ES_EIITP="${REPOSITORY_GH_ES}/eiitp"
+alias cd_eiitp="cd ${REPOSITORY_GH_ES_EIITP}"
+alias eiitp=make
+alias run_eiitp='cd_eiitp && eiitp go'
 
-REPOSITORY_GH_MV_MV_DOT_NET="${REPOSITORY_GH_MV}/mauriciovieira.net"
-alias cd_mv_dot_net="cd ${REPOSITORY_GH_MV_MV_DOT_NET}"
 
 ## Gitlab
-REPOSITORY_GL=~/Repositories/gitlab.com
+REPOSITORY_GL=~/repo/gitlab.com
 alias cd_gl="cd ${REPOSITORY_GL}"
 
-### https://gitlab.com/mauriciovieira/
-REPOSITORY_GL_MV=${REPOSITORY_GL}/mauriciovieira/
-alias cd_gl_mv="cd ${REPOSITORY_GL_MV}"
+### https://gitlab.com/ehsj/
+REPOSITORY_GL_ES=${REPOSITORY_GL}/ehsj/
+alias cd_gl_es="cd ${REPOSITORY_GL_ES}"
 
 ## Shell
 alias ll='ls -alF'

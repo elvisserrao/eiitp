@@ -8,9 +8,9 @@
   vars:
     oh_my_zsh_repo: "https://github.com/robbyrussell/oh-my-zsh.git"
     oh_my_zsh_dir: "~/.oh-my-zsh"
+    zsh_syntax_highlighting_repo: "https://github.com/zsh-users/zsh-syntax-highlighting.git"
+    zsh_syntax_highlighting_dir: "~/zsh-syntax-highlighting"
     zshrc: "templates/shell/.zshrc"
-    src_ssh_config: "templates/shell/ssh-config"
-    dst_ssh_config: "~/.ssh/config"
     src_gitconfig: "templates/shell/gitconfig"
     dst_gitconfig: "~/.gitconfig"
 
@@ -22,13 +22,12 @@
     - name: Install zshrc
       copy: src="{{ zshrc }}" dest="{{ ansible_user_dir }}" mode=0640
 
-    - name: Install sshconfig
-      copy: src="{{ src_ssh_config }}" dest="{{ dst_ssh_config }}" mode=0600
-
     - name: Install gitconfig
       copy: src="{{ src_gitconfig }}" dest="{{ dst_gitconfig }}" mode=0644
 
+    - name: Set zsh as default shell
+      user: name={{ ansible_user_id }} shell=/bin/zsh
 
-    # - name: Set zsh as default shell
-    #   user: name={{ ansible_user_id }} shell=/bin/zsh
-    # chsh -s /bin/zsh
+    - name: Clone zsh-syntax-highlighting repository
+      git: repo="{{ zsh_syntax_highlighting_repo }}" dest="{{ zsh_syntax_highlighting_dir }}" version=master
+      

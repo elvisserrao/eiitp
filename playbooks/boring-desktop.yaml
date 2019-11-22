@@ -5,11 +5,8 @@
 
   vars:
     cask_packages:
-      - dropbox
-      - gotomeeting
-      - itau
-      - libreoffice
       - slack
+      - deezer
 
   tasks:
     - name: Install Homebrew Cask packages

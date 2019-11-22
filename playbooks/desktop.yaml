@@ -9,17 +9,12 @@
 
     cask_packages:
       - adobe-acrobat-reader
-      - caffeine
-      - docker
-      - electrum
-      - firefox
       - google-chrome
       - iterm2
       - shiftit
       - skitch
-      - skype
-      - telegram
       - visual-studio-code
+      - vlc
 
   tasks:
     - name: Install Homebrew packages

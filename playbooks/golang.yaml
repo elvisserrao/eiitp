@@ -9,7 +9,7 @@
       - hugo
 
     go_directories:
-      - ~/workspace/Go/src/github.com/mauriciovieira
+      - ~/workspace/Go/src/github.com/elvisserrao
       - ~/workspace/Go/bin
       - ~/workspace/Go/pkg
 

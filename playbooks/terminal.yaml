@@ -4,8 +4,6 @@
   gather_facts: no
 
   vars:
-    topsecret_repo: "git@gitlab.com:mauriciovieira/top-secret.git"
-    topsecret_path: "~/Repositories/gitlab.com/mauriciovieira/top-secret"
     vscode_settings: "templates/Library/ApplicationSupport/Code/User/settings.json"
     vscode_settings_path: "~/Library/Application Support/Code/User/"
     screenshots_path: "~/Pictures/Screenshots"
@@ -41,6 +39,7 @@
       - zlib
       - zsh
       - zsh-completions
+      - zsh-syntax-highlighting
 
     cask_packages:
       - java
@@ -62,14 +61,14 @@
     #   - yadr
 
   tasks:
-    - name: Ensure {{ topsecret_path }} exists
-      file: path={{ topsecret_path }} state=directory
+  #   - name: Ensure {{ topsecret_path }} exists
+  #     file: path={{ topsecret_path }} state=directory
 
-    - name: Clone / update top-secret repository
-      git: repo={{ topsecret_repo }} dest="{{ topsecret_path }}" version=master
+  #   - name: Clone / update top-secret repository
+  #     git: repo={{ topsecret_repo }} dest="{{ topsecret_path }}" version=master
 
-    - name: Install top-secret stuff
-      shell: chdir="{{ topsecret_path }}" make install
+  #   - name: Install top-secret stuff
+  #     shell: chdir="{{ topsecret_path }}" make install
 
     - name: Uninstall Homebrew packages
       homebrew: name={{ unwanted_packages }} state=absent
