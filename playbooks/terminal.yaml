@@ -20,13 +20,13 @@
       - git
       - git-flow-avh
       - gnu-indent
-      - heroku
+#      - heroku
       - htop
       - hub
       - imagemagick
       - jq
       - mosh
-      - parity
+#      - parity
       - passpie
       - pv
       - pyenv

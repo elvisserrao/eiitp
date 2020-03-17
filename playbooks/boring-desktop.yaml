@@ -6,7 +6,7 @@
   vars:
     cask_packages:
       - slack
-      - deezer
+#      - deezer
 
   tasks:
     - name: Install Homebrew Cask packages
