@@ -9,4 +9,3 @@
 - import_playbook: playbooks/aliases.yaml
 - import_playbook: playbooks/databases.yaml
 - import_playbook: playbooks/taps.yaml
-- import_playbook: playbooks/nvm.yaml

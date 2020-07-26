@@ -5,8 +5,13 @@
 
   vars:
     cask_packages:
-      - slack
-#      - deezer
+      - anydesk
+      - deezer
+      - discord
+      - insomnia
+      - macs-fan-control
+      - postman
+      - zoomus
 
   tasks:
     - name: Install Homebrew Cask packages

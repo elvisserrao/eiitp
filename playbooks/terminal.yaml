@@ -20,18 +20,13 @@
       - git
       - git-flow-avh
       - gnu-indent
-#      - heroku
       - htop
       - hub
       - imagemagick
       - jq
       - mosh
-#      - parity
       - passpie
       - pv
-      - pyenv
-      - pyenv-virtualenv
-      - pyenv-virtualenvwrapper
       - shellcheck
       - terminal-notifier
       - wget
@@ -44,8 +39,6 @@
     cask_packages:
       - java
       - ngrok
-      - vagrant
-      - virtualbox
 
     rubygems:
       - travis

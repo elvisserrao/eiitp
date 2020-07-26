@@ -8,7 +8,6 @@
       - homebrew/cask-versions
       - homebrew/core
       - thoughtbot/formulae
-      - heroku/brew
 
   tasks:
     - name: Add Homebrew taps
