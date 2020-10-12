@@ -37,7 +37,7 @@
       - zsh-syntax-highlighting
 
     cask_packages:
-      - java
+    #   - java
       - ngrok
 
     rubygems:
