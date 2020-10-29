@@ -141,3 +141,9 @@ alias gRl='git remote -v'
 ## MacOS
 
 alias o='open'
+alias startm='brew services start mysql'
+alias stopm='brew services stop mysql'
+alias startp='pg_ctl -D /usr/local/var/postgres start'
+alias stopp='pg_ctl -D /usr/local/var/postgres stop'
+alias statusm='brew services list'
+alias statusp='pg_ctl -D /usr/local/var/postgres status'
