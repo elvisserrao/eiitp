@@ -11,7 +11,7 @@
       - insomnia
       - macs-fan-control
       - postman
-      - zoomus
+      - microsoft-teams
 
   tasks:
     - name: Install Homebrew Cask packages
