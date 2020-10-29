@@ -4,6 +4,24 @@
     "files.trimTrailingWhitespace": true,
     "workbench.activityBar.visible": true,
     "window.zoomLevel": 0,
+    "editor.codeActionsOnSave": {
+        // For ESLint
+        "source.fixAll.eslint": true,
+    },
+    "explorer.confirmDelete": false,
+    "[javascript]" : {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true
+    },
     "editor.tabSize": 2,
-    "editor.wordWrap": "on"
+    "editor.wordWrap": "on",
+    "ruby.codeCompletion": "rcodetools",
+    "ruby.format": "rubocop",
+    "ruby.intellisense": "rubyLocate",
+    "sync.gist": "803cf7798ed4deecd74128d9fc2d840b",
+    "workbench.iconTheme": "Monokai Pro (Filter Spectrum) Icons",
+    "workbench.colorTheme": "Refined (Charcoal)",
+    // // add below to VSCode User settings to auto fix eslint formatting issues on file save
+    // "editor.formatOnSave": true,
+    // "eslint.alwaysShowStatus": true
 }
