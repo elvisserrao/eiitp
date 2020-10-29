@@ -8,13 +8,11 @@
       - macvim
 
     cask_packages:
-      - adobe-acrobat-reader
       - google-chrome
       - iterm2
       - shiftit
       - skitch
       - visual-studio-code
-      - vlc
 
   tasks:
     - name: Install Homebrew packages
