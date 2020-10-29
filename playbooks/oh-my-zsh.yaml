@@ -8,6 +8,8 @@
   vars:
     oh_my_zsh_repo: "https://github.com/robbyrussell/oh-my-zsh.git"
     oh_my_zsh_dir: "~/.oh-my-zsh"
+    zsh_auto_suggestions_repo: "https://github.com/zsh-users/zsh-autosuggestions"
+    zsh_auto_suggestions_dir: "~/.oh-my-zsh/custom/plugins/zsh-autosuggestions"
     zsh_syntax_highlighting_repo: "https://github.com/zsh-users/zsh-syntax-highlighting.git"
     zsh_syntax_highlighting_dir: "~/zsh-syntax-highlighting"
     zshrc: "templates/shell/.zshrc"
@@ -30,4 +32,6 @@
 
     - name: Clone zsh-syntax-highlighting repository
       git: repo="{{ zsh_syntax_highlighting_repo }}" dest="{{ zsh_syntax_highlighting_dir }}" version=master
-      
+
+    - name: Clone zsh-auto-suggestions repository
+      git: repo="{{ zsh_auto_suggestions_repo }}" dest="{{ zsh_auto_suggestions_dir }}" version=master
